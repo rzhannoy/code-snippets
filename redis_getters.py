@@ -14,7 +14,7 @@ redis_client.set('my_float', 3.14)
 redis_client.set('my_bool', 1)
 
 # Get typed values with defaults:
-default_val = redis_client.get_float('my_key', 'default_value')
+default_val = redis_client.get_str('my_key', 'default_value')
 int_val = redis_client.get_int('my_int', 0)
 float_val = redis_client.get_float('my_float', 0.0)
 bool_val = redis_client.get_bool('my_bool', False)
