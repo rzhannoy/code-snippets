@@ -1,6 +1,6 @@
 '''
 Execute any functions with any kwargs concurrently using threads or processes.
-Each `ExecConf.func` is executed against each of its `ExecConf.kwargs_sets`.
+Each `ExecConf.func` is run against each of its `ExecConf.kwargs_sets`.
 Results will be tracked either via `kwargs_sets[id_field]`, in which case it must be unique,
 or via `ExecConf.func.__name__` plus random string if `id_field` is not provided.
 
